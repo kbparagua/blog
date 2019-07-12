@@ -1,0 +1,41 @@
+---
+layout: default
+pagination:
+  enabled: true
+---
+
+{% for post in paginator.posts %}
+  <span class="post-data-container secondary-text-color">
+    <span class="post-data">
+      <i class="fas fa-user"></i>
+      <span class="post-data-label">{{ site.author }}</span>
+    </span>
+    <span class="post-data">
+      <i class="fas fa-calendar"></i>
+      <span class="post-data-label">{{ post.date | date: "%B %d, %Y" }}</span>
+    </span>
+  </span>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+  <div class="post-content">
+    <div class="post-content-excerpt">{{ post.excerpt }}</div>
+
+    {% if post.excerpt != post.content %}
+      <a href="{{ post.url }}">Read more</a>
+    {% endif %}
+  </div>
+{% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">Previous</a>
+  {% endif %}
+
+  <span>
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">Next</a>
+  {% endif %}
+</div>

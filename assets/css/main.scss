@@ -21,7 +21,8 @@ $visited-color: #2aa198;
 body {
   background: $bg-color;
   color: $text-color;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 14px;
 }
 
 a {
@@ -29,13 +30,15 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: $visited-color;
+    color: $link-color;
     text-decoration: none;
   }
 }
 
 .main-column {
   width: 850px;
+  min-width: 320px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -45,7 +48,7 @@ a {
   top: 0;
   width: 100%;
   background: $secondary-bg-color;
-  padding: 35px 150px;
+  padding: 25px 35px;
 
   #title {
     font-family: 'Russo One', sans-serif;
@@ -73,4 +76,8 @@ a {
     font-size: 16px;
     line-height: 1.5;
   }
+}
+
+.secondary-text-color {
+  color: #586e75;
 }
