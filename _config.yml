@@ -16,7 +16,6 @@
 title: Karl Paragua
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Life. Minimalism. Self-Improvement
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.karlparagua.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
