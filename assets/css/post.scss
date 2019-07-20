@@ -1,7 +1,13 @@
 ---
 ---
 
-.post-data-container {
+.post {
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+  border-bottom: dotted 0.5px #586e75;
+}
+
+.post-details {
   .post-data {
     font-size: 10px;
     font-weight: bold;
@@ -14,4 +20,8 @@
   .post-data-label {
     margin-left: 3px;
   }
+}
+
+.post-content {
+  margin-top: 45px;
 }

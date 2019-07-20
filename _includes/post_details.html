@@ -1,0 +1,13 @@
+<div class="post-details secondary-text-color">
+  <span class="post-data">
+    <i class="fas fa-clock"></i>
+    <span class="post-data-label">{{ include.date | date: "%B %d, %Y" }}</span>
+  </span>
+
+  {% for tag in include.tags %}
+    <span class="post-data">
+      <i class="fas fa-tag"></i>
+      <span class="post-data-label">{{ tag }}</span>
+    </span>
+  {% endfor %}
+</div>

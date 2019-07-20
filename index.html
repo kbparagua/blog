@@ -5,24 +5,19 @@ pagination:
 ---
 
 {% for post in paginator.posts %}
-  <span class="post-data-container secondary-text-color">
-    <span class="post-data">
-      <i class="fas fa-user"></i>
-      <span class="post-data-label">{{ site.author }}</span>
-    </span>
-    <span class="post-data">
-      <i class="fas fa-calendar"></i>
-      <span class="post-data-label">{{ post.date | date: "%B %d, %Y" }}</span>
-    </span>
-  </span>
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <div class="post">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    {% assign date = post.date %}
+    {% assign tags = post.tags %}
+    {% include post_details.html date=date tags=tags %}
 
-  <div class="post-content">
-    <div class="post-content-excerpt">{{ post.excerpt }}</div>
+    <div class="post-content">
+      <div class="post-content-excerpt">{{ post.excerpt }}</div>
 
-    {% if post.excerpt != post.content %}
-      <a href="{{ post.url }}">Read more</a>
-    {% endif %}
+      {% if post.excerpt != post.content %}
+        <a href="{{ post.url }}">Read more</a>
+      {% endif %}
+    </div>
   </div>
 {% endfor %}
 
