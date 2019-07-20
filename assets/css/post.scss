@@ -2,16 +2,21 @@
 ---
 
 .post {
-  margin-bottom: 25px;
-  padding-bottom: 30px;
-  border-bottom: dotted 0.5px #586e75;
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .post-details {
+  display: flex;
+  flex-wrap: wrap;
+
   .post-data {
     font-size: 10px;
     font-weight: bold;
     margin-right: 8px;
+    margin-bottom: 8px;
     background: #073642;
     padding: 8px 10px;
     border-radius: 4px;
@@ -22,6 +27,4 @@
   }
 }
 
-.post-content {
-  margin-top: 45px;
-}
+.post-content {}

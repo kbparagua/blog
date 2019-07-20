@@ -4,8 +4,19 @@
 $bg-primary: #002b36;
 $bg-secondary: #073642;
 $text-color: #839496;
+$text-highlight: #586e75;
 $link-color: #268bd2;
 $visited-color: #2aa198;
+
+// Highlight Colors
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
+$white: #eee8d5;
 
 
 // Backgrounds
@@ -28,46 +39,87 @@ a {
   color: $link-color;
   text-decoration: none;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   &:visited {
     color: $link-color;
     text-decoration: none;
   }
 }
 
+h1 {
+  font-family: 'Open Sans', sans-serif;
+
+  a, a:visited {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Buttons
+
 .main-column {
-  width: 850px;
+  width: 1000px;
   min-width: 320px;
   max-width: 100%;
   margin: auto;
 }
 
 #header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   padding: 25px 35px;
+  display: table;
 
-  #title {
-    font-family: 'Russo One', sans-serif;
+  #left-item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  #right-item {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+  }
+
+  .menu-toggle {
     font-size: 24px;
   }
 
+  #title {
+    a, a:visited, a:hover {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+
   #subtitle {
-    font-size: 15px;
-    color: #ced6e0;
+    font-size: 11px;
+    font-style: italic;
   }
 }
 
 #content {
+  margin-top: 130px;
+  margin-bottom: 70px;
+  padding: 0px 15px;
+
   h1 {
-    font-size: 35px;
+    font-size: 42px;
     font-weight: bold;
   }
-
-  margin-top: 130px;
-  padding: 20px 35px;
-  border-radius: 6px;
 
   p {
     font-size: 16px;
@@ -77,4 +129,11 @@ a {
 
 .secondary-text-color {
   color: #586e75;
+}
+
+.post-separator {
+  height: 1px;
+  width: 100%;
+  background: $bg-secondary;
+  margin: 55px 0px;
 }
