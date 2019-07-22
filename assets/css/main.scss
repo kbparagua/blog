@@ -1,22 +1,11 @@
 ---
 ---
 
-$bg-primary: #002b36;
-$bg-secondary: #073642;
-$text-color: #839496;
-$text-highlight: #586e75;
-$link-color: #268bd2;
-$visited-color: #2aa198;
-
-// Highlight Colors
-$orange: #cb4b16;
-$red: #dc322f;
-$magenta: #d33682;
-$violet: #6c71c4;
-$blue: #268bd2;
-$cyan: #2aa198;
-$green: #859900;
-$white: #eee8d5;
+$bg-primary: #232931;
+$bg-secondary: #393e46;
+$text-primary: #ecf0f1;
+$text-secondary: #839496;
+$highlight: #4ecca3;
 
 
 // Backgrounds
@@ -30,13 +19,13 @@ $white: #eee8d5;
 
 body {
   background: $bg-primary;
-  color: $text-color;
+  color: $text-primary;
   font-family: 'Montseratt', sans-serif;
   font-size: 14px;
 }
 
 a {
-  color: $link-color;
+  color: $highlight;
   text-decoration: none;
 
   &:hover {
@@ -44,17 +33,19 @@ a {
   }
 
   &:visited {
-    color: $link-color;
+    color: $highlight;
     text-decoration: none;
   }
 }
 
 h1 {
   font-family: 'Merriweather', sans-serif;
-  text-align: center;
+  text-align: left;
+  font-size: 42px;
+  line-height: 1;
 
   a, a:visited  {
-    color: $text-color;
+    color: $text-primary;
     text-decoration: none;
 
     &:hover {
@@ -73,9 +64,13 @@ h1 {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 25px 15px;
+  padding: 15px 15px;
   display: table;
+  background: $bg-secondary;
 
   #left-item {
     display: table-cell;
@@ -95,11 +90,11 @@ h1 {
   #title {
     a, a:visited, a:hover {
       font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       text-transform: uppercase;
       text-decoration: none;
-      color: $blue;
+      color: $text-primary;
     }
   }
 
@@ -110,13 +105,9 @@ h1 {
 }
 
 #content {
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 70px;
   padding: 0px 15px;
-
-  h1 {
-    font-size: 52px;
-  }
 
   p {
     font-size: 16px;
@@ -125,13 +116,41 @@ h1 {
   }
 }
 
-.secondary-text-color {
-  color: #586e75;
-}
-
 .post-separator {
   height: 1px;
   width: 100%;
   background: $bg-secondary;
   margin: 55px 0px;
+}
+
+.post {
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.post-excerpt {
+  color: $text-secondary;
+}
+
+.post-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .post-data {
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background: $bg-secondary;
+    color: $text-secondary;
+    padding: 8px 10px;
+    border-radius: 4px;
+  }
+
+  .post-data-label {
+    margin-left: 3px;
+  }
 }

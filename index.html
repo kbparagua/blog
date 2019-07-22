@@ -13,7 +13,7 @@ pagination:
     {% include post_details.html date=date tags=tags %}
 
     <div class="post-content">
-      <div class="post-content-excerpt">{{ post.excerpt }}</div>
+      <div class="post-excerpt">{{ post.excerpt }}</div>
 
       {% if post.excerpt != post.content %}
         <a class="btn btn-primary" href="{{ post.url }}">Read more</a>
