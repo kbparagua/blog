@@ -1,0 +1,40 @@
+<div class="reset-scroll">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<style>
+  .reset-scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2ecc71;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 9;
+    border-radius: 6px;
+  }
+</style>
+
+<script type="text/javascript">
+  (function(){
+    var $window = $(window),
+        $doc = $(document),
+        $el = $('.reset-scroll');
+
+    function scrollUp(){
+      $('html, body').stop().animate({ scrollTop: 0 }, 500, 'swing');
+    }
+
+    $doc.ready(function(){
+      $doc.on('scroll', function(){
+        if ( $window.scrollTop() > 300 ) $el.fadeIn();
+        else $el.fadeOut();
+      });
+
+      $el.on('click', function(){ scrollUp(); });
+    });
+  })();
+</script>
