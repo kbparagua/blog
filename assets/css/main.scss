@@ -1,12 +1,13 @@
 ---
 ---
 
-$bg-primary: #232931;
-$bg-secondary: #393e46;
-$text-primary: #ecf0f1;
-$text-secondary: #839496;
-$highlight: #4ecca3;
-
+$bg-primary: #ffffff;
+$bg-secondary: #ecf0f1;
+$bg-inverted: #2c3e50;
+$text-primary: #292929;
+$text-secondary: #757575;
+$text-inverted: #ecf0f1;
+$highlight: #2ecc71;
 
 // Backgrounds
 
@@ -39,9 +40,9 @@ a {
 }
 
 h1 {
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
-  font-size: 42px;
+  font-size: 34px;
   line-height: 1;
 
   a, a:visited  {
@@ -70,7 +71,10 @@ h1 {
   width: 100%;
   padding: 15px 15px;
   display: table;
-  background: $bg-secondary;
+  background: $bg-primary;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
+  box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
 
   #left-item {
     display: table-cell;
@@ -113,6 +117,7 @@ h1 {
     font-size: 16px;
     line-height: 1.5;
     text-align: justify;
+    color: $text-secondary;
   }
 }
 
@@ -127,6 +132,9 @@ h1 {
   img {
     max-width: 100%;
     margin-bottom: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
+    box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
   }
 }
 
@@ -141,7 +149,6 @@ h1 {
 
   .post-data {
     font-size: 10px;
-    font-weight: bold;
     margin-right: 8px;
     margin-bottom: 8px;
     background: $bg-secondary;
