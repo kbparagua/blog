@@ -1,0 +1,63 @@
+<div id="subscribe-overlay" class="subscribe-el"></div>
+<div id="subscribe-box-container" class="subscribe-el">
+  <div id="subscribe-box">
+    <a href="#" class="subscribe-close">Close</a>
+    <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=KarlParagua', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+      <p>Enter your email address:</p>
+      <p>
+        <input type="text" style="width:140px" name="email"/>
+      </p>
+      <input type="hidden" value="KarlParagua" name="uri"/>
+      <input type="hidden" name="loc" value="en_US"/>
+      <input type="submit" value="Subscribe" />
+    </form>
+  </div>
+</div>
+
+<style>
+  .subscribe-el { display: none; }
+
+  #subscribe-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 99;
+    background: black;
+    opacity: 0.75;
+  }
+
+  #subscribe-box-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 100;
+  }
+
+  #subscribe-box {
+    margin: auto;
+    margin-top: 35px;
+    width: 650px;
+    max-width: 98%;
+    background: white;
+  }
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.subscribe-box-trigger').on('click', function(e){
+      e.preventDefault();
+      $('.subscribe-el').fadeIn();
+    });
+
+    $('.subscribe-close').on('click', function(e){
+      e.preventDefault();
+      $('.subscribe-el').fadeOut();
+    });
+  });
+</script>

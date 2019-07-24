@@ -14,21 +14,8 @@
     {% include reset_scroll.html %}
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=911200055899024&autoLogAppEvents=1"></script>
-    <div id="header">
-      <div id="left-item">
-        <div id="title">
-          <a href="/">{{ site.title }}</a>
-        </div>
-        <div id="subtitle">{{ site.description }}</div>
-      </div>
-      <div id="right-item">
-        <a href="#" class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </a>
-      </div>
-    </div>
+    {% include header.html %}
     <div id="content" class="main-column">
-      {% include newsletter.html %}
       {{ content }}
     </div>
   </body>

@@ -1,0 +1,83 @@
+<div id="header">
+  <div id="brand">
+    <a href="#">Karl Paragua</a>
+  </div>
+
+  <div class="right-nav">
+    <ul class="nav-items">
+      <li class="item">
+        <a href="#" class="subscribe-box-trigger">
+          <i class="fas fa-bell"></i>
+          Subscribe
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% include subscribe_box.html %}
+
+<style>
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
+    box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
+    overflow: hidden;
+  }
+
+  #brand {
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 14px;
+  }
+
+  .right-nav {
+    float: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-items {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0px 14px;
+  }
+
+  .nav-items .item a:hover {
+    text-decoration: none;
+  }
+
+  #title a, #title a:visited, #title a:hover {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #292929;
+  }
+</style>
+
