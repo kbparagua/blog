@@ -1,16 +1,32 @@
 <div id="subscribe-overlay" class="subscribe-el"></div>
 <div id="subscribe-box-container" class="subscribe-el">
   <div id="subscribe-box">
-    <a href="#" class="subscribe-close">Close</a>
-    <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=KarlParagua', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-      <p>Enter your email address:</p>
-      <p>
-        <input type="text" style="width:140px" name="email"/>
-      </p>
-      <input type="hidden" value="KarlParagua" name="uri"/>
-      <input type="hidden" name="loc" value="en_US"/>
-      <input type="submit" value="Subscribe" />
-    </form>
+    <div class="subscribe-header">
+      <a href="#" class="subscribe-close">
+        <i class="fas fa-times"></i>
+      </a>
+    </div>
+
+    <div class="subscribe-body">
+      <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=KarlParagua', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+        <span class="subscribe-hero">Enter your email address</span>
+        <div class="email-box">
+          <input type="text" name="email" placeholder="you@email.com" />
+        </div>
+        <input type="hidden" value="KarlParagua" name="uri"/>
+        <input type="hidden" name="loc" value="en_US"/>
+        <input type="submit" value="Subscribe" class="subscribe-btn" />
+      </form>
+
+      <div class="or-separator">or follow me on</div>
+      <ul class="social-media">
+        <li>
+          <a href="https://www.facebook.com/karlparagua.blog" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -42,9 +58,73 @@
   #subscribe-box {
     margin: auto;
     margin-top: 35px;
-    width: 650px;
+    padding: 25px;
+    width: 500px;
     max-width: 98%;
     background: white;
+  }
+
+  .subscribe-header {
+    margin-bottom: 15px;
+    text-align: right;
+  }
+
+  .subscribe-close {
+    font-size: 34px;
+  }
+
+  .subscribe-body {
+    width: 450px;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .subscribe-hero {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .subscribe-body .email-box {
+    margin: 12px 0;
+  }
+
+  .subscribe-body .email-box input[type="text"] {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .subscribe-btn {
+    background: #2ecc71;
+    color: #ffffff;
+    padding:  10px 0;
+    font-size: 16px;
+    box-shadow: 0 0 0 transparent;
+    border-color: transparent;
+    text-shadow: 0 0 0 transparent;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .subscribe-body .or-separator {
+    text-align: center;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+
+  .subscribe-body .social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .subscribe-body .social-media a {
+    color: #757575 !important;
   }
 </style>
 
