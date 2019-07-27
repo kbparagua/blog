@@ -8,7 +8,9 @@ layout: default
   {% assign tags = page.tags %}
   {% include post_details.html date=date tags=tags %}
   {{ content }}
-  {% include share_post.html %}
-
-  <div class="fb-comments" data-href="{{ site.url }}/{{ page.url }}" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>
 </div>
+
+{% include share_post.html %}
+{% include author_box.html %}
+
+<div class="fb-comments" data-href="{{ site.url }}/{{ page.url }}" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>
