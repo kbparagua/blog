@@ -1,0 +1,21 @@
+<div class="post-social-buttons">
+  <div class="fb-share-button social-btn"
+    data-href="{{ site.url }}/{{ page.url }}"
+    data-layout="button"
+    data-size="large">
+  </div>
+
+  <a class="twitter-share-button social-btn"
+    href="https://twitter.com/intent/tweet?text={{ page.title }}"
+    data-size="large">Tweet</a>
+</div>
+
+<style>
+  .post-social-buttons {
+    display: flex;
+  }
+
+  .post-social-buttons > * {
+    margin-right: 6px;
+  }
+</style>

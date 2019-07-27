@@ -7,16 +7,11 @@
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d920580c2e.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
+    {% include external_javascripts.html %}
     {% include reset_scroll.html %}
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=911200055899024&autoLogAppEvents=1"></script>
     {% include header.html %}
-    <div id="content" class="main-column">
-      {{ content }}
-    </div>
+    <div id="content" class="main-column">{{ content }}</div>
   </body>
 </html>
