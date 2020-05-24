@@ -114,6 +114,11 @@ h1 {
   color: $text-secondary;
 }
 
+.read-more {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .post-details {
   display: flex;
   flex-wrap: wrap;
@@ -149,6 +154,10 @@ h1 {
     p {
       font-size: 14px;
     }
+  }
+
+  .read-more {
+    font-size: 14px;
   }
 
   .post-details {
