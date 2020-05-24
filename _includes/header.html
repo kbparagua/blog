@@ -1,23 +1,24 @@
 <div id="header">
-  <div id="brand">
-    <a href="/">Karl Paragua</a>
-  </div>
+  <div id="header-content">
+    <div id="brand">
+      <a href="/">karl paragua</a>
+    </div>
 
-  <div class="right-nav">
-    <ul class="nav-items">
-      <li class="item">
-        <a href="#" class="subscribe-box-trigger">
-          <i class="fas fa-bell"></i>
-          Subscribe
-        </a>
-      </li>
+    <div class="right-nav">
+      <ul class="nav-items">
+        <li class="item">
+          <a href="#" title="Subscribe" class="subscribe-box-trigger">
+            <i class="fas fa-bell"></i>
+          </a>
+        </li>
 
-      <li class="item">
-        <a href="#" class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </a>
-      </li>
-    </ul>
+        <li class="item">
+          <a href="#" title="Menu" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -29,13 +30,19 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background: #ffffff;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
     -moz-box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
     box-shadow: 0px 1px 4px 0px rgba(189,195,199,1);
     overflow: hidden;
     z-index: 999;
+  }
+
+  #header-content {
+    width:  900px;
+    height: 100%;
+    margin: auto;
   }
 
   #brand {
@@ -45,6 +52,14 @@
     flex-direction: column;
     justify-content: center;
     padding: 0px 14px;
+    font-family: 'Cabin Condensed Bold';
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  #brand a, #brand a:hover, #brand a:visited, #brand a:active {
+    text-decoration: none;
+    color: gray;
   }
 
   .right-nav {
@@ -64,11 +79,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 14px;
+    font-size: 22px;
     padding: 0px 14px;
   }
 
+  .nav-items .item a {
+    opacity: 0.7;
+  }
+
   .nav-items .item a:hover {
+    opacity: 1;
     text-decoration: none;
   }
 

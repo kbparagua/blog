@@ -9,6 +9,16 @@ $text-secondary: #757575;
 $text-inverted: #ecf0f1;
 $highlight: #2ecc71;
 
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'Cabin Condensed Bold';
+  src:  url("../fonts/CabinCondensed-Bold.ttf")
+}
+
 // Backgrounds
 
 .bg-primary { background: $bg-primary; }
@@ -58,7 +68,7 @@ h1 {
 // Buttons
 
 .main-column {
-  width: 760px;
+  width: 900px;
   min-width: 320px;
   max-width: 100%;
   margin: auto;
