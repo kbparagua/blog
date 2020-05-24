@@ -16,7 +16,12 @@ $highlight: #2ecc71;
 
 @font-face {
   font-family: 'Cabin Condensed Bold';
-  src:  url("../fonts/CabinCondensed-Bold.ttf")
+  src: url("../fonts/CabinCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Cabin Condensed SemiBold';
+  src: url("../fonts/CabinCondensed-SemiBold.ttf");
 }
 
 // Backgrounds
@@ -50,10 +55,10 @@ a {
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cabin Condensed SemiBold', sans-serif;
   text-align: left;
-  font-size: 34px;
-  line-height: 1;
+  font-size: 54px;
+  margin-bottom: 12px;
 
   a, a:visited  {
     color: $text-primary;
@@ -81,8 +86,8 @@ h1 {
   padding: 0px 15px;
 
   p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.75;
     text-align: justify;
     color: $text-secondary;
   }
@@ -115,12 +120,12 @@ h1 {
   justify-content: flex-start;
 
   .post-data {
-    font-size: 10px;
+    font-size: 13px;
     margin-right: 8px;
     margin-bottom: 8px;
     background: $bg-secondary;
     color: $text-secondary;
-    padding: 8px 10px;
+    padding: 10px 12px;
     border-radius: 4px;
   }
 
