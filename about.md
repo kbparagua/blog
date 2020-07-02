@@ -1,24 +1,26 @@
 ---
 layout: default
-title: Test Title Foo and Bar Something
+title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## What is this site?
+This is my personal blog.
 
 
-[jekyll-organization]: https://github.com/jekyll
+## Okay. So, who are you?
+I'm Karl, a <span class='js-age'>0</span> years old software engineer from the Philippines. I've been developing web applications and also irregularly producing half-baked side-projects for fun for the past <span class='js-work-years'>0</span> years. Besides cursing computers professionally, I also have a life outside that. I play sports, watch animes, listen to music, and other regular things that regular people do.
+
+## Why blog?
+I think this is my 5th try on blogging and I'm not that proud of saying that. Just a little backstory. When I was younger I used to write a lot. I may not be the best at storytelling or even grammar, but I genuinely like sharing my thoughts. But as you know, as we grow old our priorities change. I got to the point where I can't find time to write anymore. So I just stopped.
+
+But this time I want to try it again. So yeah, I'm writing again. I'm not sure if I can do this consistently. But I'm very well sure that I don't want to pressure myself to the point of burnout. Just taking this easy. One post at a time.
+
+## Is this a technology blog?
+My work is in the tech industry so I have little choice but to talk about what I know. But other than that I will also write about random stuff about life. After all, I'm just a regular person who happens to be working with computers.
+
+## Can I talk to you?
+
+Uhm. Yeah, sure. Just email me at kb.paragua@gmail.com
